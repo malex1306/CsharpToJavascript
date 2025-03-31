@@ -30,7 +30,7 @@ switch(randomNumber){
         console.log('Outlook not so good');
         break;
     case 7:
-        console.log('Signs point to yes');
+        console.log('Signs point to ye');
         break;
     default:
         eightBall = 'Error';
