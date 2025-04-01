@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CelMoria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="start-screen">
+  <h1>CelMoria</h1>
+  <button onclick="showCharacterCreation()">Spiel Starten</button>
+  <button onclick="showSettings()">Einstellungen</button>
+  <button onclick="exitGame()">Beenden</button>
+</div>
+
+<div id="settings-screen" style="display: none;">
+  <h2>Einstellungen</h2>
+  <label for="volume">Lautstärke:</label>
+  <input type="range" id="volume" min="0" max="100" value="50">
+  <button onclick="backToStart()">Zurück</button>
+</div>
+
+<div id="character-creation" style="display: none;">
+  <h2>Charaktererstellung</h2>
+  <p>Wähle eine Klasse:</p>
+  <button onclick="chooseClass('Krieger')">Krieger</button>
+  <button onclick="chooseClass('Magier')">Magier</button>
+  <button onclick="chooseClass('Bogenschütze')">Bogenschütze</button>
+
+  <h3>Verteile Punkte:</h3>
+  <p>Verfügbare Punkte: <span id="points">10</span></p>
+  <p>Stärke: <span id="strength">0</span> <button onclick="increaseStat('strength')">+</button></p>
+  <p>Geschick: <span id="dexterity">0</span> <button onclick="increaseStat('dexterity')">+</button></p>
+  <p>Intelligenz: <span id="intelligence">0</span> <button onclick="increaseStat('intelligence')">+</button></p>
+  <button onclick="startGame()">Spiel starten</button>
+</div>
+
+<div id="game-screen" style="display: none;">
+  <h1>CelMoria - Die Geschichte</h1>
+  <div id="story">Willkommen in CelMoria!</div>
+  <div id="choices"></div>
+</div>
+
+<script src="character.js"></script>
+<script src="story.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

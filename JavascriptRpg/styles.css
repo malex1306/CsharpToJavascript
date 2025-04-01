@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    font-size: 5em;
+}
+
+#story {
+    width: 80%;
+    height: 150px;
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 2em;
+}
+
+#choices {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #666;
+}
