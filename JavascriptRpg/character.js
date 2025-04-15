@@ -8,7 +8,7 @@ let player = {
 
 function chooseClass(selectedClass) {
     player.class = selectedClass;
-    alert("Du hast " + selectedClass + " gewählt");
+    alert("Du hast " + selectedClass + " gewähltgit pull origin main\n");
 }
 
 function increaseStat(stat) {
