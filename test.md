@@ -1,2 +1,2 @@
 - [ ] Nr. 1 Aufgabe offen
-- [x] Nr. 2 Aufgabe erledigt
+- [] Nr. 2 Aufgabe erledigt
